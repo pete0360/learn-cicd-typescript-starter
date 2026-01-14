@@ -46,8 +46,8 @@ jobs:
       - name: Run Prettier
         run: npm run format:check
 
-      - name: Run linter
-        run: npm run lint
+      - name: Check linting
+        run: npm run lint -- --max-warnings=0
       
       - name: Success
         run: (exit 0)
